@@ -57,13 +57,18 @@ public class GlassNode {
 
     // height
 
-    int height(GlassNode root)
+    public int getHeight()
+    {
+        return getHeight(this);
+    }
+
+    private int getHeight(GlassNode root)
     {
         if (root == null)
             return 0;
         else {
-            int lheight = height(root.left);
-            int rheight = height(root.right);
+            int lheight = getHeight(root.left);
+            int rheight = getHeight(root.right);
 
             if (lheight > rheight)
                 return (lheight + 1);
@@ -76,7 +81,7 @@ public class GlassNode {
 
     public void printLevelOrder()
     {
-        int h = height(this);
+        int h = getHeight(this);
         int i;
         for (i = 1; i <= h; i++)
         {
