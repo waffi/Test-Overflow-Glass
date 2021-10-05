@@ -1,4 +1,4 @@
-package com.company;
+package com.company.overflowglass.main.model;
 
 public class GlassPosition {
     public int i;

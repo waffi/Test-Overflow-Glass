@@ -1,4 +1,4 @@
-package com.company;
+package com.company.overflowglass.main.model;
 
 public class GlassNode {
     public float value;
@@ -74,7 +74,7 @@ public class GlassNode {
 
     // print
 
-    void printLevelOrder()
+    public void printLevelOrder()
     {
         int h = height(this);
         int i;
@@ -85,7 +85,7 @@ public class GlassNode {
         }
     }
 
-    void printCurrentLevel(GlassNode node, int level)
+    public void printCurrentLevel(GlassNode node, int level)
     {
         if (node == null)
             return;
@@ -98,5 +98,4 @@ public class GlassNode {
             printCurrentLevel(node.right, level - 1);
         }
     }
-
 }

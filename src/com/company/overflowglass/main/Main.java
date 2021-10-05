@@ -1,4 +1,6 @@
-package com.company;
+package com.company.overflowglass.main;
+
+import com.company.overflowglass.main.model.GlassNode;
 
 public class Main {
 
